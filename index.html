@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register by Tan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- กล่องแบบฟอร์ม -->
+        <div class="formBox">
+            <!-- toggle button -->
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <!-- icons social media -->
+            <div class="social-box">
+                <img src="img/twitter.png" alt="">
+                <img src="img/facebook-2.png" alt="">
+                <img src="img/github.png" alt="">
+            </div>
+
+            <!-- form login -->
+            <form class="form-login" id="login">
+                <input type="email" placeholder="Email" class="form-field" required>
+                <input type="password" placeholder="Password" class="form-field" required>
+
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+
+            <!-- form Register -->
+            <form class="form-login" id="register">
+                <input type="text" placeholder="Username" class="form-field" required>
+                <input type="email" placeholder="Email" class="form-field" required>
+                <input type="password" placeholder="Password" class="form-field" required>
+
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
